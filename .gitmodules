@@ -1,0 +1,3 @@
+[submodule ".github/workflows/Lionsgate2025-project"]
+	path = .github/workflows/Lionsgate2025-project
+	url = https://github.com/tommed510/Lionsgate2025-project.git

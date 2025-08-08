@@ -1,11 +1,11 @@
 from openai import AzureOpenAI
 import os
 import streamlit as st
-st.title("Streamlit Test Page")
-st.write("こんにちは、Streamlitのテストです！")
+st.title("🦁 Welcome to Lion Chatbot 🦁")
+st.write("こんにちは、ここはLionが活躍する特別な空間です！")
 
 # デバッグ用メッセージを追加
-st.text("Test message: このメッセージが表示されるかテスト中です！")
+st.text("テスト段階のメッセージですが、このデザインを楽しんでください！")
 
 # Azure OpenAI の API キーとエンドポイントを環境変数から取得  
 azure_endpoint = os.environ["CHATBOT_AZURE_OPENAI_ENDPOINT"]
@@ -20,7 +20,7 @@ try:
     api_key=api_key,
     api_version=api_version
     )
-    st.write("Azure OpenAI client initialized successfully!")
+    st.write("Enter a message to start a chat.")
 except Exception as e:
     st.write(f"Error initializing Azure OpenAI client:, {e}")
 
